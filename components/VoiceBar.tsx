@@ -77,7 +77,7 @@ const Bar: React.FC<BarProps> = ({ x, baseHeight, centerY, state, strokeWidth, m
 };
 
 export const VoiceBar = ({ state = 'idle', numBars = 4, totalWidth = 120, strokeWidth = 30, ...props }: VoiceBarProps) => {
-    const viewBoxHeight = 80;
+    const viewBoxHeight = 90;
     const centerY = viewBoxHeight / 2; 
     const maxHeight = viewBoxHeight - 4; // Leave 2px padding on top/bottom
     const margin = totalWidth / 16;
