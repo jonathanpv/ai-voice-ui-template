@@ -175,10 +175,6 @@ export function HeroSection() {
           console.log('🎤 Animation trigger: AI Audio Ended');
           stopAISpeechAnimation();
         },
-        onAction: (content) => {
-          setActionContent(content);
-          setShowActionDialog(true);
-        },
         onError: (message) => setError(message)
       });
 

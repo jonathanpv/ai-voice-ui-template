@@ -659,9 +659,6 @@ export default function BloopVisualization() {
           currentStateRef.current = 'idle';
           updateUIState();
         },
-        onAction: (content: string) => {
-          console.log('🎬 [Bloop2] Action received:', content);
-        }
       });
       
       console.log('🚀 [Bloop2] Connecting to RealtimeAPI...');
