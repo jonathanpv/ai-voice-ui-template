@@ -419,7 +419,7 @@ type ColorTheme = keyof typeof COLOR_THEMES;
 class AudioProcessor {
   private callback: (data: { avgMag: number[]; cumulativeAudio: number[]; micLevel: number }) => void;
   private analyser: AnalyserNode | null = null;
-  private dataArray: Uint8Array | null = null;
+  private dataArray: Uint8Array<ArrayBuffer> | null = null;
   private audioContext: AudioContext | null = null;
   private stream: MediaStream | null = null;
   private cumulativeAudio: number[] = [0, 0, 0, 0];
@@ -651,12 +651,6 @@ export default function BloopVisualization() {
           console.log('🔇 [Bloop2] AI audio playback ended');
           isListeningModeRef.current = true;
           updateUIState();
-        },
-        onAudioData: (audioData: ArrayBuffer | Float32Array) => {
-          // Process AI audio for visualization
-          if (audioProcessorRef.current) {
-            audioProcessorRef.current.processAudioData(audioData);
-          }
         },
         onError: (message: string) => {
           console.error('❌ [Bloop2] Realtime API error:', message);
