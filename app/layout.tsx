@@ -27,25 +27,25 @@ const sfRounded = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Slashly - AI Voice Assistant for Business",
-  description: "Talk to Slashly, the AI assistant that helps automate slide creation, outreach, sales, and team productivity.",
+  title: "AI Voice UI template by @jonpadven",
+  description: "Voice UI components / demos, by @jonpadven, support me on X",
   openGraph: {
-    title: "SSlashly - AI Voice Assistant for Business",
+    title: "AI Voice UI template by @jonpadven",
     description: "Talk to Slashly, the AI assistant that helps automate slide creation, outreach, sales, and team productivity.",
     images: [
       {
-        url: "/saascraft-meta.png",
+        url: "/voiceui-og.png",
         width: 1200,
         height: 720,
-        alt: "Slashly - AI Voice Assistant for Business",
+        alt: "Voice UI components / demos, by @jonpadven, support me on X",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sprrrint SaasCraft Landing Page in React",
-    description: "By @jonpadven, support me on X",
-    images: ["/saascraft-meta.png"],
+    title: "AI Voice UI template by @jonpadven",
+    description: "Voice UI components / demos, by @jonpadven, support me on X",
+    images: ["/voiceui-og.png"],
   },
 };
 
